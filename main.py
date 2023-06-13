@@ -3,7 +3,17 @@ import requests
 from lxml import html
 from tqdm import tqdm
 
+def is_valid_username(username):
+    if not username.isalnum() and "_" not in username:
+        return False
+    if len(username) < 5:
+        return False
+    return True
+
 def check_username(username):
+    if not is_valid_username(username):
+        return False
+
     url = f"https://t.me/{username}"
     response = requests.get(url)
     tree = html.fromstring(response.content)
