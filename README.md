@@ -13,7 +13,7 @@ The Telegram Username Checker is a Python script that allows you to check the va
 
 1. Prepare a list of usernames to check by adding them to a file (e.g., `list.txt`), with each username on a separate line.
 2. Update the script to set the correct file paths for the input list and the output file where valid usernames will be saved.
-3. Go to the folder on the terminal: `cd Telegram-Username-Checker`.
+3. Go to the folder on the terminal: `cd Telegram-Username-Checker-main`.
 4. You need to install the necessary dependencies or requirements to run the script. The command:  `pip install -r requirements.txt`.
 5. Run the script using Python: `python main.py`.
 6. The script will check each username in the list, display a progress bar, and print the valid usernames.
